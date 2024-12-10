@@ -10,8 +10,6 @@ window.addEventListener("message", async ({ data: { type, data } }) => {
     case "start":
       const simulation = simulate(data);
 
-      console.log(data, simulation());
-
       await visualize(DOMVisualization, data, simulation());
 
       parent.postMessage({ type: "done" }, "http://localhost:3000");
