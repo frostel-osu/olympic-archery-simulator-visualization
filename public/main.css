@@ -1,0 +1,16 @@
+@import url(https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css);
+
+text {
+  font-family: serif;
+  font-size: 16px;
+}
+
+.c-axis { text-anchor: middle; }
+
+.c-time { text-anchor: end; }
+
+.c-path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
