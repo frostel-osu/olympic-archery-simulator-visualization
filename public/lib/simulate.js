@@ -36,7 +36,7 @@ const simulate = ({ draw_weight_lb, height_in, humidity_rel, pressure_pa, temper
   const air_density_kgm3 = ideal_gas_law(humidity_rel, pressure_pa, temperature_k);
   const arrow_radius_m = 3.25 / 1000; //estimate
   const arrow_area_m2 = Math.PI * arrow_radius_m ** 2;
-  const drag_coefficient = 0.8; //estimate
+  const drag_coefficient = 2.6; //estimate
 
   return function * () {
     let t_s = 0, x_m = 0, y_m = arrow_height_m;
